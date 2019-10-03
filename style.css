@@ -10,9 +10,12 @@ body{
 .slide{
    overflow-y: hidden;
 }
-nav li{
+.nav li{
    font-size: 16px;
    text-transform: uppercase; 
+}
+.nav li:nth-child(4){
+   letter-spacing: 1.1px;
 }
 .nav li a:visited, .nav li a:active{
    color: white !important;

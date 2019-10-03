@@ -1,0 +1,158 @@
+html{
+   font-family: 'Rajdhani', sans-serif;
+}
+body{
+   overflow-x: hidden;
+   padding: 0;
+   max-width: 100vw;
+   scroll-behavior: smooth;
+}
+.slide{
+   overflow-y: hidden;
+}
+nav li{
+   font-size: 16px;
+   text-transform: uppercase; 
+}
+.nav li a:visited, .nav li a:active{
+   color: white !important;
+}
+.nav li a:hover {
+   color: gray !important;
+   text-decoration: none;
+}
+.scrolled{
+   background-color: gray;
+   transition: all 0.5s ease-in-out;
+}
+.fixed{
+   width: 100%;
+   position: fixed;
+   background: #102039;
+   z-index: 9999;
+   height: 63px;
+   color: #fff;
+   line-height: 4;
+}
+.rightToggle{
+   position: absolute;
+   top: 0px;
+   right: -10363px;
+   background: whitesmoke;
+   width: 100%;
+   height: 100%;
+}
+.right{
+   top: 0px;
+   right: 0px;
+   transition: right 0.5s ease;
+   background: whitesmoke;
+   width: 100%;
+   height: 100%;
+   z-index: 99;
+   position: fixed;
+}
+.sliding__inner{
+   padding: 90px 20px;
+}
+
+/*----------------------------------------*/
+ 
+ a:hover
+ {
+   color: tomato;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 20px;
+   /* left: 140px; */
+   z-index: 1;
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   cursor: pointer;
+   opacity: 0;
+   z-index: 2;
+   -webkit-touch-callout: none;
+ }
+ #menuToggle span
+ {
+   display: block;
+    width: 33px;
+    height: 1px;
+    margin-bottom: 10px;
+    position: relative;
+    background: #cdcdcd;
+    z-index: 1;
+   transform-origin: 4px 0px;
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-13px, -21px);
+   background: #cdcdcd;
+ }
+ 
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, 9px);
+ }
+
+ /* News - page - start */
+
+ .news-page{
+   padding: 70px 0px;
+ }
+
+ /* News - page - end */
+
+ /* posts - start */
+
+ .pt-12{
+    padding-top: 70px;
+ }
+
+ /* posts - end */
+
+ /*Footer---start*/
+
+ footer {
+   background-color: #102039;
+   color: white;
+}
+ footer a {
+   color: white;
+}
+
+ /*Footer---end*/
